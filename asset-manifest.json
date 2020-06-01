@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.32c74280.chunk.css",
-    "main.js": "./static/js/main.2f646684.chunk.js",
-    "main.js.map": "./static/js/main.2f646684.chunk.js.map",
+    "main.css": "./static/css/main.2d3cd4f8.chunk.css",
+    "main.js": "./static/js/main.1227b4c8.chunk.js",
+    "main.js.map": "./static/js/main.1227b4c8.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.7c3e9311.js",
     "runtime-main.js.map": "./static/js/runtime-main.7c3e9311.js.map",
     "static/js/2.02560598.chunk.js": "./static/js/2.02560598.chunk.js",
     "static/js/2.02560598.chunk.js.map": "./static/js/2.02560598.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.d415e749d240741c7655e4a4d1275806.js": "./precache-manifest.d415e749d240741c7655e4a4d1275806.js",
+    "precache-manifest.4e984e4f91fb05592245db6f7ed14c56.js": "./precache-manifest.4e984e4f91fb05592245db6f7ed14c56.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.32c74280.chunk.css.map": "./static/css/main.32c74280.chunk.css.map",
+    "static/css/main.2d3cd4f8.chunk.css.map": "./static/css/main.2d3cd4f8.chunk.css.map",
     "static/js/2.02560598.chunk.js.LICENSE.txt": "./static/js/2.02560598.chunk.js.LICENSE.txt",
     "static/media/App.scss": "./static/media/Mont-SemiBold.d41a520b.otf",
     "static/media/Header.scss": "./static/media/shopping-bag.032a50cf.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.7c3e9311.js",
     "static/js/2.02560598.chunk.js",
-    "static/css/main.32c74280.chunk.css",
-    "static/js/main.2f646684.chunk.js"
+    "static/css/main.2d3cd4f8.chunk.css",
+    "static/js/main.1227b4c8.chunk.js"
   ]
 }
