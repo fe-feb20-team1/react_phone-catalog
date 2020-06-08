@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.ad9c2005.chunk.css",
-    "main.js": "./static/js/main.fd3bfb24.chunk.js",
-    "main.js.map": "./static/js/main.fd3bfb24.chunk.js.map",
+    "main.css": "./static/css/main.23824982.chunk.css",
+    "main.js": "./static/js/main.a41656da.chunk.js",
+    "main.js.map": "./static/js/main.a41656da.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.7c3e9311.js",
     "runtime-main.js.map": "./static/js/runtime-main.7c3e9311.js.map",
     "static/js/2.99d2fc43.chunk.js": "./static/js/2.99d2fc43.chunk.js",
     "static/js/2.99d2fc43.chunk.js.map": "./static/js/2.99d2fc43.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.dd8ce7e693febb19b81ff039499cc42a.js": "./precache-manifest.dd8ce7e693febb19b81ff039499cc42a.js",
+    "precache-manifest.78005de4ec814cd3b212fef089d8a2d1.js": "./precache-manifest.78005de4ec814cd3b212fef089d8a2d1.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.ad9c2005.chunk.css.map": "./static/css/main.ad9c2005.chunk.css.map",
+    "static/css/main.23824982.chunk.css.map": "./static/css/main.23824982.chunk.css.map",
     "static/js/2.99d2fc43.chunk.js.LICENSE.txt": "./static/js/2.99d2fc43.chunk.js.LICENSE.txt",
     "static/media/App.scss": "./static/media/Mont-SemiBold.d41a520b.otf",
     "static/media/HeaderNavigation.scss": "./static/media/shopping-bag.032a50cf.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.7c3e9311.js",
     "static/js/2.99d2fc43.chunk.js",
-    "static/css/main.ad9c2005.chunk.css",
-    "static/js/main.fd3bfb24.chunk.js"
+    "static/css/main.23824982.chunk.css",
+    "static/js/main.a41656da.chunk.js"
   ]
 }
