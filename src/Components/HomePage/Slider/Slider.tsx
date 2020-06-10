@@ -28,7 +28,7 @@ const Slider: React.FC = () => {
   }, [dotOnFocus]);
 
   useEffect(() => {
-    const nextMove = setInterval(showNextImg, 2000);
+    const nextMove = setInterval(showNextImg, 2400);
 
     return () => clearInterval(nextMove);
   }, []);
