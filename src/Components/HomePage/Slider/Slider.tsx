@@ -36,6 +36,7 @@ const Slider: React.FC = () => {
     const nextMove = setInterval(showNextImg, 2000);
 
     return () => clearInterval(nextMove);
+    // eslint-disable-next-line
   }, []);
 
   const showPrevImg = () => {
