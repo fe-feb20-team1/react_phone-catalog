@@ -1,0 +1,15 @@
+.category {
+  &__block {
+    width: 368px;
+    height: 443px;
+    margin-bottom: 80px;
+    cursor: pointer;
+    border: 1px solid red;
+  }
+
+  &__img-background {
+    width: 368px;
+    height: 368px;
+    margin-bottom: 24px;
+  }
+}
