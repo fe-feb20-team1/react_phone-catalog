@@ -1,0 +1,36 @@
+.hot-prices {
+  margin-top: 82px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrow {
+    background-image: url(./images/arrow.svg);
+    background-color: #fff;
+    border: none;
+    transform: rotate(-90deg);
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+    cursor: pointer;
+
+    &--right {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-gap: 16px;
+    margin-top: 28px;
+    overflow: hidden;
+  }
+
+  &__card {
+    background-color: gray;
+    height: 507px;
+    transition: 0.5s;
+  }
+}
