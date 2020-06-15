@@ -14,7 +14,6 @@
     position: relative;
     margin-left: 16px;
     margin-right: 16px;
-    position: relative;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -80,7 +79,7 @@
         outline: transparent;
       }
     }
-    
+
     .dot.active {
       background-color: #98999c;
     }
