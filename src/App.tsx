@@ -6,13 +6,11 @@ import Footer from './Components/Footer/Footer';
 
 import { getGoodsFromServer } from './helpers/api';
 import { finishLoading, startLoading } from './store/loading';
-/*import { getGoods } from './store/index';*/
 
 import './styles/App.scss';
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
-  /*const goods = useSelector(getGoods);*/
 
   useEffect(() => {
     dispatch(startLoading());

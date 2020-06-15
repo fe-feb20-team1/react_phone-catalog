@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import './HotPrices.scss';
 import Card from '../../Card/Card';
 
 import { cardWidth, visibleCards } from './constants';
+import { getGoods } from '../../../store/index';
 
 const HotPrices: React.FC = () => {
   const [X, setX] = useState(0);
   const [count, setCount] = useState(1);
-  const cards = [1, 2, 3, 4, 5, 6, 7];
   const [numberVisibleCards, setNumberVisibleCards] = useState(visibleCards);
+  const goods = useSelector(getGoods);
 
   const handleButtonRight = () => {
     setNumberVisibleCards(numberVisibleCards + 1)
@@ -40,25 +42,17 @@ const HotPrices: React.FC = () => {
               type="button"
               className="hot-prices__arrow hot-prices__arrow--right"
               onClick={handleButtonRight}
-              disabled={numberVisibleCards === cards.length}
+              disabled={numberVisibleCards === goods.length}
             />
           </div>
         </div>
 
         <div
           className="hot-prices__cards"
-          style={{ gridTemplateColumns: `repeat(${cards.length}, 272px)` }}
+          style={{ gridTemplateColumns: `repeat(${goods.length}, 272px)` }}
         >
-          {cards.map(card => (
-            <>
-              <div
-                className="hot-prices__card card"
-                style={{ transform: `translateX(${X}px)` }}
-              >
-                {card}
-              </div>
-              <Card />
-            </>
+          {goods.map(good => (
+            <Card good={good} width={X} key={good.id} />
           ))}
         </div>
 

@@ -31,13 +31,8 @@
   &__cards {
     display: grid;
     grid-gap: 16px;
-    margin-top: 28px;
+    margin-top: 8px;
     overflow: hidden;
-  }
-
-  &__card {
-    background-color: gray;
-    height: 507px;
-    transition: 0.5s;
+    padding: 20px 0;
   }
 }
