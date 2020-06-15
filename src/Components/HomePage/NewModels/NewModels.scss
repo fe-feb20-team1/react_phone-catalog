@@ -1,0 +1,38 @@
+.new-models {
+  margin-bottom: 60px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__arrow {
+    background-image: url(./images/arrow.svg);
+    background-color: #fff;
+    border: none;
+    transform: rotate(-90deg);
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &--right {
+      transform: rotate(90deg);
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: auto;
+      box-shadow: none;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-gap: 16px;
+    margin-top: 8px;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+}
