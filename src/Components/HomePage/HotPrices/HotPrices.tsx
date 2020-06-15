@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
 import './HotPrices.scss';
 
+import { cardWidth, visibleCards } from './constants';
+
 const HotPrices: React.FC = () => {
   const [X, setX] = useState(0);
   const [count, setCount] = useState(1);
-  const [cards, setCards] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
-  let cardWidth = 288;
+  const cards = [1, 2, 3, 4, 5, 6, 7];
+  const [numberVisibleCards, setNumberVisibleCards] = useState(visibleCards);
 
   const handleButtonRight = () => {
-    setX((0 - cardWidth) * count);
+    setNumberVisibleCards(numberVisibleCards + 1)
+    setX(- cardWidth * count);
     setCount(count + 1);
-    setCards([...cards.slice(1), cards[0]])
-    console.log(cards);
   }
 
   const handleButtonLeft = () => {
-    setCount(count - 1);
+    setNumberVisibleCards(numberVisibleCards - 1)
     setX(X + cardWidth);
+    setCount(count - 1);
   }
 
   return (
@@ -31,11 +33,13 @@ const HotPrices: React.FC = () => {
               type="button"
               className="hot-prices__arrow"
               onClick={handleButtonLeft}
+              disabled={numberVisibleCards === visibleCards}
             />
             <button
               type="button"
               className="hot-prices__arrow hot-prices__arrow--right"
               onClick={handleButtonRight}
+              disabled={numberVisibleCards === cards.length}
             />
           </div>
         </div>
