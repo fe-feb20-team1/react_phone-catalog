@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './HotPrices.scss';
+import Card from '../../Card/Card';
 
 import { cardWidth, visibleCards } from './constants';
 
@@ -49,12 +50,15 @@ const HotPrices: React.FC = () => {
           style={{ gridTemplateColumns: `repeat(${cards.length}, 272px)` }}
         >
           {cards.map(card => (
-            <div
-              className="hot-prices__card card"
-              style={{ transform: `translateX(${X}px)` }}
-            >
-              {card}
-            </div>
+            <>
+              <div
+                className="hot-prices__card card"
+                style={{ transform: `translateX(${X}px)` }}
+              >
+                {card}
+              </div>
+              <Card />
+            </>
           ))}
         </div>
 
