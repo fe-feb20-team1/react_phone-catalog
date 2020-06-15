@@ -4,11 +4,10 @@ import { NavLink, Link } from 'react-router-dom';
 import './Footer.scss';
 
 const Footer = () => {
-
   return (
     <footer className="footer">
       <div className="container">
-        <NavLink to="/home" className="footer__logo" >
+        <NavLink to="/home" className="footer__logo">
           <img src="./img/logo.svg" alt="logo" className="logo" />
         </NavLink>
 
@@ -28,13 +27,13 @@ const Footer = () => {
           <div className="footer__text">
             Back to top
           </div>
-          <Link to="/top" className="footer__button" >
+          <Link to="/top" className="footer__button">
             <img src="./img/back-to-top.svg" alt="back-to-top" className="footer__button" />
           </Link>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;
