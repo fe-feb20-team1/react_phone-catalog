@@ -1,0 +1,63 @@
+a {
+  text-decoration: none;
+  color: black;
+  // font-family: "Mont", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+  }
+}
+
+.category {
+  &__block {
+    width: 368px;
+    height: 443px;
+    margin-bottom: 80px;
+    cursor: pointer;
+  }
+
+  &__description {
+    p {
+      margin-top: 4px;
+      color: #89939A;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+
+      cursor: auto;
+    }
+}
+
+  &__img-background {
+    &--phones {
+      width: 368px;
+      height: 368px;
+      margin-bottom: 24px;
+      background-image: url('./categories_images/image1.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+
+    &--tablets {
+      width: 368px;
+      height: 368px;
+      margin-bottom: 24px;
+      background-image: url('./categories_images/image2.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+
+    &--accessories {
+      width: 368px;
+      height: 368px;
+      margin-bottom: 24px;
+      background-image: url('./categories_images/image3.png');
+      background-repeat: no-repeat;
+      background-position: right bottom;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.categories {
+  margin-top: 80px;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
