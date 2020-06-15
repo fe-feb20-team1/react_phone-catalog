@@ -9,19 +9,19 @@ export const categories: Category[] = [
   {
     title: 'Mobile Phones',
     backgroundColor: '#FCDBC1',
-    src: './images/image1.png',
+    src: 'phones',
     modelsCount: 95,
   },
   {
     title: 'Tablets',
     backgroundColor: '#8D8D92',
-    src: './images/image2.png',
+    src: 'tablets',
     modelsCount: 24,
   },
   {
-    title: 'Accesories',
+    title: 'Accessories',
     backgroundColor: '#973D5F',
-    src: './images/image3.png',
+    src: 'accessories',
     modelsCount: 100,
   },
 ];

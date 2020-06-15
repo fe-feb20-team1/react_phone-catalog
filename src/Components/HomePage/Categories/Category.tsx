@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import './Category.scss';
 
 type Props = {
@@ -11,13 +13,20 @@ type Props = {
 const Category: React.FC<Props> = ({
   title, backgroundColor, src, modelsCount,
 }) => {
+  const imgClass = `category__img-background--${src}`;
+
   return (
     <div className="category__block">
-      <div className="category__img-background" style={{ backgroundColor }}>
-        <img src={src} alt={title} />
-      </div>
+      <NavLink to={src}>
+        <div
+          className={imgClass}
+          style={{ backgroundColor }}
+        />
+      </NavLink>
       <div className="category__description">
-        <h2>{title}</h2>
+        <NavLink to={src}>
+          <h2>{title}</h2>
+        </NavLink>
         <p>{`${modelsCount} models`}</p>
       </div>
     </div>
