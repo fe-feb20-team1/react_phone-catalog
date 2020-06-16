@@ -17,7 +17,7 @@ const App: React.FC = () => {
 
     getGoodsFromServer()
       .then(
-        goodsFromServer => dispatch(finishLoading(goodsFromServer))
+        goodsFromServer => dispatch(finishLoading(goodsFromServer)),
       );
   }, []);
 
@@ -28,6 +28,6 @@ const App: React.FC = () => {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

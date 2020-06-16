@@ -13,16 +13,16 @@ const HotPrices: React.FC = () => {
   const goods = useSelector(getGoods);
 
   const handleButtonRight = () => {
-    setNumberVisibleCards(numberVisibleCards + 1)
-    setX(- cardWidth * count);
+    setNumberVisibleCards(numberVisibleCards + 1);
+    setX(-cardWidth * count);
     setCount(count + 1);
-  }
+  };
 
   const handleButtonLeft = () => {
-    setNumberVisibleCards(numberVisibleCards - 1)
+    setNumberVisibleCards(numberVisibleCards - 1);
     setX(X + cardWidth);
     setCount(count - 1);
-  }
+  };
 
   return (
     <section className="hot-prices">
@@ -58,7 +58,7 @@ const HotPrices: React.FC = () => {
 
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default HotPrices;

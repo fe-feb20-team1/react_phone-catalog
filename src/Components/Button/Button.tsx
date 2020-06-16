@@ -4,12 +4,18 @@ import './Button.scss';
 const Button = () => {
   return (
     <>
-      <button className="button">
+      <button
+        type="button"
+        className="button"
+      >
         Add to card
       </button>
-      <button className="button__favourites"></button>
+      <button
+        type="button"
+        className="button__favourites"
+      />
     </>
-  )
-}
+  );
+};
 
 export default Button;

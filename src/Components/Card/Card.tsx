@@ -1,11 +1,12 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import './Card.scss';
-import Button from '../Button/Button'
+import Button from '../Button/Button';
 
 type Props = {
   good: Goods;
   width: number;
-}
+};
 
 const Card: React.FC<Props> = ({ good, width }) => {
   return (
@@ -45,7 +46,7 @@ const Card: React.FC<Props> = ({ good, width }) => {
       </div>
       <Button />
     </div>
-  )
-}
+  );
+};
 
 export default Card;
