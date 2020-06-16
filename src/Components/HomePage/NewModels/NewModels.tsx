@@ -28,7 +28,7 @@ const NewModels: React.FC = () => {
     <section className="new-models">
       <div className="container">
         <div className="new-models__header">
-          <h2>
+          <h2 className="new-models__title">
             Hot prices
           </h2>
           <div className="new-models__buttons">

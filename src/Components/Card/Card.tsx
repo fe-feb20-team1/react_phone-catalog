@@ -7,10 +7,10 @@ type Props = {
   width: number;
 }
 
-const Card: React.FC<Props> = ({ good, width }) => {
+const Card: React.FC<Props> = ({ good, width = 0 }) => {
   return (
     <div
-      className="hot-prices__card card"
+      className="card"
       style={{ transform: `translateX(${width}px)` }}
     >
       <img src={good.imageUrl} className="card__image" alt={good.name} />
