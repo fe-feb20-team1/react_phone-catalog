@@ -1,0 +1,88 @@
+.sorting {
+  position: relative;
+
+  &__wrapper {
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-gap: 16px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 12px;
+    color: #89939a;
+    margin-bottom: 4px;
+  }
+
+  &__select {
+    position: relative;
+    color: #313237;
+    padding-left: 12px;
+    box-sizing: border-box;
+    border: 1px solid #b4bdc4;
+    line-height: 40px;
+    cursor: pointer;
+
+    &-page {
+      width: 70%;
+    }
+  }
+
+  &__option {
+    display: block;
+    height: 40px;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: none;
+  }
+
+  &__arrow {
+    background-image: url(./images/arrow.svg);
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    bottom: 20%;
+    transform: translate(0, -50%) rotate(90deg);
+    right: 12px;
+    cursor: pointer;
+
+    &--up {
+      transform: translate(0, -50%) rotate(-90deg);
+    }
+  }
+
+  &__list {
+    list-style: none;
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+    border: 1px solid #b4bdc4;
+
+    &-page {
+      width: 70%;
+    }
+  }
+
+  &__text {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    box-sizing: border-box;
+    color: #89939a;
+    padding-left: 12px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: rgba(180,189,196, 0.1);
+      cursor: pointer;
+    }
+  }
+}

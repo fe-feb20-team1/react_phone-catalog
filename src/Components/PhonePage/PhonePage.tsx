@@ -5,6 +5,7 @@ import Breadcrumbs from  '../Breadcrumbs/Breadcrumbs';
 import Card from '../Card/Card';
 import Sorting from '../Sorting/Sorting';
 import { getGoods } from '../../store/index';
+import Pagination from '../Pagination/Pagination';
 
 const PhonePage = () => {
   const goods = useSelector(getGoods);
@@ -23,6 +24,7 @@ const PhonePage = () => {
           <Card good={good} width={0} key={good.id} />
         ))}
       </div>
+      <Pagination />
     </>
   )
 }
