@@ -28,7 +28,7 @@ const HotPrices: React.FC = () => {
     <section className="hot-prices">
       <div className="container">
         <div className="hot-prices__header">
-          <h2>
+          <h2 className="hot-prices__title">
             Hot prices
           </h2>
           <div className="hot-prices__buttons">

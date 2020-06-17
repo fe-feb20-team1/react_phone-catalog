@@ -7,7 +7,9 @@ import './Categories.scss';
 const Categories: React.FC = () => {
   return (
     <section className="categories">
-      <h1>Shop by category</h1>
+      <h2 className="categories__title">
+        Shop by category
+      </h2>
       <div className="categories__wrapper">
         {categories.map(category => (
           <Category {...category} />

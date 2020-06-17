@@ -1,7 +1,10 @@
 .categories {
   margin-top: 80px;
 
-  h1 {
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    color: #313237;
     margin-bottom: 24px;
   }
 
