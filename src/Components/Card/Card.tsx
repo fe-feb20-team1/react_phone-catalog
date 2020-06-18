@@ -19,11 +19,15 @@ const Card: React.FC<Props> = ({ good, width = 0 }) => {
         {good.name}
       </h5>
       <span className="card__new-price">
-        $799
+        ${(good.discount > 0)
+          ? good.price - ((good.price / 100) * good.discount)
+          : good.price}
       </span>
-      <span className="card__old-price">
-        ${good.price}
-      </span>
+      {(good.discount > 0) && (
+        <span className="card__old-price">
+          ${good.price}
+        </span>
+      )}
       <div className="card__info">
         <div className="card__info-title">
           Screen
