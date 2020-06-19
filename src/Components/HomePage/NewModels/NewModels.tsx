@@ -30,7 +30,7 @@ const NewModels: React.FC<Props> = ({ goods }) => {
       <div className="container">
         <div className="new-models__header">
           <h2>
-            Hot prices
+            Brand new models
           </h2>
           <div className="new-models__buttons">
             <button
