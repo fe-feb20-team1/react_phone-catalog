@@ -10,7 +10,7 @@ const Categories: React.FC = () => {
       <h1>Shop by category</h1>
       <div className="categories__wrapper">
         {categories.map(category => (
-          <Category {...category} />
+          <Category {...category} key={category.title} />
         ))}
       </div>
     </section>

@@ -12,4 +12,3 @@ export async function getGoodsFromServer() {
 
   return phones;
 }
-
