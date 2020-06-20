@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
 import './HotPrices.scss';
 import Card from '../../Card/Card';
 
 import { cardWidth, visibleCards } from './constants';
-import { getGoods } from '../../../store/index';
 
-const HotPrices: React.FC = () => {
+type Props = {
+  goods: Goods[];
+};
+
+const HotPrices: React.FC<Props> = ({ goods }) => {
   const [X, setX] = useState(0);
   const [count, setCount] = useState(1);
   const [numberVisibleCards, setNumberVisibleCards] = useState(visibleCards);
-  const goods = useSelector(getGoods);
 
   const handleButtonRight = () => {
     setNumberVisibleCards(numberVisibleCards + 1);
@@ -28,7 +29,7 @@ const HotPrices: React.FC = () => {
     <section className="hot-prices">
       <div className="container">
         <div className="hot-prices__header">
-          <h2>
+          <h2 className="hot-prices__title">
             Hot prices
           </h2>
           <div className="hot-prices__buttons">
@@ -37,13 +38,17 @@ const HotPrices: React.FC = () => {
               className="hot-prices__arrow"
               onClick={handleButtonLeft}
               disabled={numberVisibleCards === visibleCards}
-            />
+            >
+              {' '}
+            </button>
             <button
               type="button"
               className="hot-prices__arrow hot-prices__arrow--right"
               onClick={handleButtonRight}
               disabled={numberVisibleCards === goods.length}
-            />
+            >
+              {' '}
+            </button>
           </div>
         </div>
 

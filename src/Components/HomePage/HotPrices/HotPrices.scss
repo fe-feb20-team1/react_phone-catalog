@@ -6,6 +6,12 @@
     justify-content: space-between;
   }
 
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    color: #313237;
+  }
+
   &__arrow {
     background-image: url(./images/arrow.svg);
     background-color: #fff;

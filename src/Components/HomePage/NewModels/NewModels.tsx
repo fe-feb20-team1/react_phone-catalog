@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
 import './NewModels.scss';
 import Card from '../../Card/Card';
 
 import { cardWidth, visibleCards } from './constants';
-import { getGoods } from '../../../store/index';
 
-const NewModels: React.FC = () => {
+type Props = {
+  goods: Goods[];
+}
+
+const NewModels: React.FC<Props> = ({ goods }) => {
   const [X, setX] = useState(0);
   const [count, setCount] = useState(1);
   const [numberVisibleCards, setNumberVisibleCards] = useState(visibleCards);
-  const goods = useSelector(getGoods);
 
   const handleButtonRight = () => {
     setNumberVisibleCards(numberVisibleCards + 1)
@@ -28,7 +29,7 @@ const NewModels: React.FC = () => {
     <section className="new-models">
       <div className="container">
         <div className="new-models__header">
-          <h2>
+          <h2 className="new-models__title">
             Hot prices
           </h2>
           <div className="new-models__buttons">

@@ -1,0 +1,22 @@
+.phone-page {
+  &__title {
+    font-weight: bold;
+    font-size: 32px;
+    color: #313237;
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    color: #89939a;
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 272px);
+    grid-gap: 16px;
+    margin-bottom: 40px;
+  }
+}

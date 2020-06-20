@@ -19,7 +19,7 @@ const App: React.FC = () => {
       .then(
         goodsFromServer => dispatch(finishLoading(goodsFromServer)),
       );
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
