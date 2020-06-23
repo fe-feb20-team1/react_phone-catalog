@@ -19,11 +19,24 @@
     position: absolute;
     right: 24px;
     bottom: 24px;
-    background-image: url(./images/add_to_favourites.svg);
     height: 40px;
     width: 40px;
-    background-color: #fff;
-    border: none;
-    cursor: pointer;
+
+    &-icon {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: url(./images/add_to_favourites.svg);
+      height: 40px;
+      width: 40px;
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    &-checkbox:checked + .button__favourites-icon {
+      background-image: url(./images/add_to_favourites_added.svg);
+    }
   }
 }

@@ -33,6 +33,23 @@
 
   &__favourites {
     background-image: url("./images/icons/favourites.svg");
+
+    &--counter {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background-color: #eb5757;
+      color: #fff;
+      border: 1px solid #fff;
+      text-align: center;
+      line-height: 14px;
+      font-size: 9px;
+      font-weight: 600;
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      box-sizing: border-box;
+    }
   }
 
   &__cart {
