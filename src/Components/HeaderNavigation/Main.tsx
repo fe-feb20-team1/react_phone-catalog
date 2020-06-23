@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import HomePage from '../HomePage/HomePage';
 import PhonePage from '../PhonePage/PhonePage';
+import Favourites from '../Favourites/Favourites';
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
           <Route path="/phones" component={() => <PhonePage />} />
           <Route path="/tablets" component={() => <h1>Tablets</h1>} />
           <Route path="/accessories" component={() => <h1>Accessories</h1>} />
+          <Route path="/favourites" component={() => <Favourites />} />
         </Switch>
       </div>
     </main>

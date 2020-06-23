@@ -12,3 +12,4 @@ interface Goods {
   capacity: '32000MB';
   ram: '1000MB';
 }
+

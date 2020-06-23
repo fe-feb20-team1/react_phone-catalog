@@ -48,7 +48,7 @@ const Card: React.FC<Props> = ({ good, width = 0 }) => {
           {good.ram}
         </div>
       </div>
-      <Button />
+      <Button id={good.id} />
     </div>
   );
 };
