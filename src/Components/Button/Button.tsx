@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavourites, removeFavourites } from '../../store/favourites';
 import { getGoods, getFavourites } from '../../store/index';
@@ -15,15 +15,17 @@ const Button: React.FC<Props> = ({ id }) => {
 
 
 
-  const handleAddFavourites = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const card = goods.find(good => good.id === id);
+  const handleAddFavourites = useCallback(
+    (event: React.ChangeEvent<HTMLInputElement>, goodId: string) => {
+    const card = goods.find(good => good.id === goodId);
 
-    if (event.target.checked && card) {
-      dispatch(addToFavourites([...favourites, card]))
+    if (event.target.checked) {
+      dispatch(addToFavourites(card))
     } else {
       dispatch(removeFavourites(id))
     }
-  }
+  }, [dispatch, goods],
+  )
 
   const isInFavourites = useMemo(()=> (
     favourites.some(good => good.id === id)
@@ -46,7 +48,7 @@ const Button: React.FC<Props> = ({ id }) => {
           id={`button__favourites${id}`}
           className="button__favourites-checkbox"
           checked={isInFavourites}
-          onChange={(event) => handleAddFavourites(event)}
+          onChange={(event) => handleAddFavourites(event, id)}
         />
         <span className="button__favourites-icon" />
       </label>
