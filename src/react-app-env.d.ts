@@ -11,6 +11,5 @@ interface Goods {
   screen: "10.1 inches",
   capacity: "32000MB",
   ram: "1000MB"
-  favourites?: false,
 }
 
