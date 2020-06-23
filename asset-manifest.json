@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "./static/css/main.ebedabd8.chunk.css",
-    "main.js": "./static/js/main.e753ed87.chunk.js",
-    "main.js.map": "./static/js/main.e753ed87.chunk.js.map",
+    "main.css": "./static/css/main.e5d4a707.chunk.css",
+    "main.js": "./static/js/main.08d12a62.chunk.js",
+    "main.js.map": "./static/js/main.08d12a62.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.7c3e9311.js",
     "runtime-main.js.map": "./static/js/runtime-main.7c3e9311.js.map",
-    "static/js/2.c2e777e5.chunk.js": "./static/js/2.c2e777e5.chunk.js",
-    "static/js/2.c2e777e5.chunk.js.map": "./static/js/2.c2e777e5.chunk.js.map",
+    "static/js/2.1db3e601.chunk.js": "./static/js/2.1db3e601.chunk.js",
+    "static/js/2.1db3e601.chunk.js.map": "./static/js/2.1db3e601.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.c1cf3b8ec8873578647629c31626d82a.js": "./precache-manifest.c1cf3b8ec8873578647629c31626d82a.js",
+    "precache-manifest.a47eb7fda4cc444ed7072b1a581b8929.js": "./precache-manifest.a47eb7fda4cc444ed7072b1a581b8929.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.ebedabd8.chunk.css.map": "./static/css/main.ebedabd8.chunk.css.map",
-    "static/js/2.c2e777e5.chunk.js.LICENSE.txt": "./static/js/2.c2e777e5.chunk.js.LICENSE.txt",
+    "static/css/main.e5d4a707.chunk.css.map": "./static/css/main.e5d4a707.chunk.css.map",
+    "static/js/2.1db3e601.chunk.js.LICENSE.txt": "./static/js/2.1db3e601.chunk.js.LICENSE.txt",
     "static/media/App.scss": "./static/media/Mont-SemiBold.d41a520b.otf",
-    "static/media/Button.scss": "./static/media/add_to_favourites.a102e6a1.svg",
-    "static/media/NewModels.scss": "./static/media/arrow.20815bfd.svg",
+    "static/media/Button.scss": "./static/media/add_to_favourites_added.e63d8a40.svg",
+    "static/media/Pagination.scss": "./static/media/arrow.20815bfd.svg",
+    "static/media/Breadcrumbs.scss": "./static/media/arrow.b8e2edcf.svg",
     "static/media/HeaderNavigation.scss": "./static/media/shopping-bag.032a50cf.svg",
     "static/media/Category.scss": "./static/media/image3.1b6e0317.png",
     "static/media/Slider.scss": "./static/media/prev-arrow.a73b0b02.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.7c3e9311.js",
-    "static/js/2.c2e777e5.chunk.js",
-    "static/css/main.ebedabd8.chunk.css",
-    "static/js/main.e753ed87.chunk.js"
+    "static/js/2.1db3e601.chunk.js",
+    "static/css/main.e5d4a707.chunk.css",
+    "static/js/main.08d12a62.chunk.js"
   ]
 }
