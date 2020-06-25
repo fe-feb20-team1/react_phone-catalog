@@ -18,17 +18,17 @@ export const sortBy = [
   {
     id: 5,
     value: 'Oldest',
-  }
+  },
 ];
 
 export const visibleItems = [
   {
     id: 1,
-    value: 4,
+    value: 20,
   },
   {
     id: 2,
-    value: 8,
+    value: 16,
   },
   {
     id: 3,
@@ -36,6 +36,10 @@ export const visibleItems = [
   },
   {
     id: 4,
-    value: 16,
-  }
+    value: 8,
+  },
+  {
+    id: 5,
+    value: 4,
+  },
 ];

@@ -12,15 +12,17 @@ const HotPrices: React.FC = () => {
           <button
             type="button"
             className="pagination__arrow"
-          />
+          >
+            {' '}
+          </button>
         </li>
         {numbers.map(item => (
           <li className="pagination__item">
             <button
               type="button"
               className={item === 1
-                ? "pagination__button pagination__button--active"
-                : "pagination__button"}
+                ? 'pagination__button pagination__button--active'
+                : 'pagination__button'}
             >
               {item}
             </button>
@@ -30,11 +32,13 @@ const HotPrices: React.FC = () => {
           <button
             type="button"
             className="pagination__arrow pagination__arrow--right"
-          />
+          >
+            {' '}
+          </button>
         </li>
       </ul>
     </section>
-  )
-}
+  );
+};
 
 export default HotPrices;

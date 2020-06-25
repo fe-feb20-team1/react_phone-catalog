@@ -2,21 +2,27 @@ import React, { useState } from 'react';
 import './Sorting.scss';
 import { visibleItems } from './constants';
 
-const ItemsOnPage = () => {
+type Props = {
+  perPage: (value: number) => void;
+};
+
+const ItemsOnPage: React.FC<Props> = ({ perPage }) => {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState(visibleItems[0].value);
   const toggle = () => setOpen(!open);
+  console.log(selection);
 
   const handleSelect = (value: number) => {
-    setSelection(value)
+    setSelection(value);
     setOpen(false);
-  }
+    perPage(value);
+  };
 
   return (
     <div className="sorting">
       <p className="sorting__title">
         Items on page
-        </p>
+      </p>
       <div
         className="sorting__select sorting__select-page"
         role="button"
@@ -25,8 +31,7 @@ const ItemsOnPage = () => {
         <p className="sorting__option">
           {selection}
         </p>
-        <p className={open ? "sorting__arrow sorting__arrow--up" : "sorting__arrow"}>
-        </p>
+        <p className={open ? 'sorting__arrow sorting__arrow--up' : 'sorting__arrow'} />
       </div>
       {open && (
         <ul className="sorting__list sorting__list-page">
@@ -46,7 +51,7 @@ const ItemsOnPage = () => {
         </ul>
       )}
     </div>
-  )
-}
+  );
+};
 
 export default ItemsOnPage;

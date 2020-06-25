@@ -1,17 +1,25 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import './Sorting.scss';
 import { sortBy } from './constants';
 import ItemsOnPage from './ItemsOnPage';
 
-const Sorting = () => {
+type Props = {
+  phonesPerPage: (value: number) => void;
+};
+
+const Sorting: React.FC<Props> = ({ phonesPerPage }) => {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState(sortBy[0].value);
   const toggle = () => setOpen(!open);
 
   const handleSelect = (value: string) => {
-    setSelection(value)
+    setSelection(value);
     setOpen(false);
-  }
+  };
+
+  const handleItem = (value: number) => {
+    phonesPerPage(value);
+  };
 
   return (
     <div className="sorting__wrapper">
@@ -27,8 +35,7 @@ const Sorting = () => {
           <p className="sorting__option">
             {selection}
           </p>
-          <p className={open ? "sorting__arrow sorting__arrow--up" : "sorting__arrow"}>
-          </p>
+          <p className={open ? 'sorting__arrow sorting__arrow--up' : 'sorting__arrow'} />
         </div>
         {open && (
           <ul className="sorting__list">
@@ -48,9 +55,11 @@ const Sorting = () => {
           </ul>
         )}
       </div>
-      <ItemsOnPage />
+      <ItemsOnPage
+        perPage={handleItem}
+      />
     </div>
-  )
-}
+  );
+};
 
 export default Sorting;
